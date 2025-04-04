@@ -21,7 +21,7 @@ function convertToAdjList(adjMatrix) {
                 AdjList[a+1]=[]
             }
             else{
-                AdjList[a+1]=[]
+                AdjList[a]=[adjMatrix[a][b]]
             }
         }
     }
