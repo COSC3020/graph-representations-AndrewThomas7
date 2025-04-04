@@ -1,7 +1,10 @@
 
 function convertToAdjList(adjMatrix) {
         var AdjList=[];
-        if(adjMatrix.length<1){
+        if(adjMatrix.length<=1){
+            if(adjMatrix.length==1){
+                return [[0]]
+            }
             // AdjList[0]=[]
             return AdjList;
         }
@@ -18,7 +21,8 @@ function convertToAdjList(adjMatrix) {
                     AdjList[a]=pushlist
                     count++;
                 }
-                if(adjMatrix[a][adjMatrix.length-1]==0 && count==0){
+
+                else if((adjMatrix[a][adjMatrix.length-1]==0) && (count==0) && (adjMatrix.length>1)){
                     AdjList[a]=[]
                 }
             }
