@@ -1,6 +1,6 @@
 function convertToAdjList(adjMatrix) {
     var AdjList={};
-    if(adjMatrix.length<=1&&adjMatrix[0][0]==null){
+    if(adjMatrix.length<1||adjMatrix[0][0]==null){
         // AdjList[0]=[]
         return AdjList;
     }
