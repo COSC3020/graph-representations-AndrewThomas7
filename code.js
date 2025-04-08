@@ -19,6 +19,9 @@ function convertToAdjList(adjMatrix) {
                 else if((adjMatrix[a][adjMatrix.length-1]==0) && (count==0)){
                     AdjList[a]=[]
                 }
+                else{
+                    return [[adjMatrix[0]]]
+                }
             }
         }
         return AdjList;
