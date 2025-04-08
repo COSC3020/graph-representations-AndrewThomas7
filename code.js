@@ -1,4 +1,3 @@
-
 function convertToAdjList(adjMatrix) {
         var AdjList=[];
         // if(adjMatrix.length<1){
@@ -25,5 +24,6 @@ function convertToAdjList(adjMatrix) {
                 }
             }
         }
-        return AdjList;
+        // return AdjList;
+        return  JSON.stringify(AdjList)
     }
