@@ -3,9 +3,6 @@ function convertToAdjList(adjMatrix) {
         // if(adjMatrix.length<1){
         //     return AdjList;
         // }
-        if(adjMatrix.length==1&&adjMatrix.length!=0){
-            return [[adjMatrix[0]]]
-        }
         for(var a=0; a<adjMatrix.length; a++){
             var pushlist=[];
             var count=0;
