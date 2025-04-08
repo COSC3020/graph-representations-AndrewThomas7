@@ -3,6 +3,9 @@ function convertToAdjList(adjMatrix) {
         // if(adjMatrix.length<1){
         //     return AdjList;
         // }
+        if(adjMatrix.length==1&&adjMatrix.length!=0){
+            return [[adjMatrix[0]]]
+        }
         for(var a=0; a<adjMatrix.length; a++){
             var pushlist=[];
             var count=0;
@@ -11,9 +14,6 @@ function convertToAdjList(adjMatrix) {
                 // var connections =[[a+1][b+1]]
                 // Object.assign(adjMatrix,{Node,connections})
                 // console.log(adjMatrix[a][b])
-                if(adjMatrix.length==1&&adjMatrix.length!=0){
-                    return [[adjMatrix[0]]]
-                }
                 if(adjMatrix[a][b]===1&&adjMatrix.length>1){
                     pushlist.push(b)
                     AdjList[a]=pushlist
