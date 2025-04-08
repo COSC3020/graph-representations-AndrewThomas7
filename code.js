@@ -17,11 +17,10 @@ function convertToAdjList(adjMatrix) {
                     count++;
                 }
 
-                else if((adjMatrix[a][adjMatrix.length-1]==0) && (count==0) && (adjMatrix.length>1)){
+                else if((adjMatrix[a][adjMatrix.length-1]==0) && (count==0)){
                     AdjList[a]=[]
                 }
             }
         }
         return AdjList;
     }
-
