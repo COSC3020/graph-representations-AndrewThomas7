@@ -11,15 +11,14 @@ function convertToAdjList(adjMatrix) {
                 // var connections =[[a+1][b+1]]
                 // Object.assign(adjMatrix,{Node,connections})
                 // console.log(adjMatrix[a][b])
-                if(adjMatrix.length==1&&adjMatrix!=[]){
-                    return [adjMatrix[0]]
+                if(adjMatrix.length==1&&adjMatrix.length!=0){
+                    return [[adjMatrix[0]]]
                 }
                 if(adjMatrix[a][b]===1&&adjMatrix.length>1){
                     pushlist.push(b)
                     AdjList[a]=pushlist
                     count++;
                 }
-
                 else if((adjMatrix[a][adjMatrix.length-1]==0) && (count==0)){
                     AdjList[a]=[]
                 }
