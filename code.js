@@ -1,8 +1,8 @@
 function convertToAdjList(adjMatrix) {
         var AdjList=[];
+        var count=0;
         for(var a=0; a<adjMatrix.length; a++){
             var pushlist=[];
-            var count=0;
             for(var b=0; b<adjMatrix.length; b++){
                 if(adjMatrix[a][b]===1&&adjMatrix.length>1){
                     pushlist.push(b)
