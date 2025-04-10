@@ -17,5 +17,5 @@ function convertToAdjList(adjMatrix) {
                 }
             }
         }
-        return  JSON.stringify(AdjList)
+       return AdjList;
     }
