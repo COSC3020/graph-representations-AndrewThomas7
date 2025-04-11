@@ -1,24 +1,35 @@
-function convertToAdjList(adjMatrix) {
-        var AdjList=[];
-        var count=0;
-        if(adjMatrix.length==1){
-            return [[adjMatrix[0]]];
+
+function NoEdges(array){
+    var Edgesless=false;
+    var count=0;
+    for(var j=0;j<array.length;j++){
+        if(array[j]==0){
+            count++
         }
-        for(var a=0; a<adjMatrix.length; a++){
-            var pushlist=[];
-            for(var b=0; b<adjMatrix.length; b++){
-                if(adjMatrix[a][b]===1&&adjMatrix.length>1){
-                    pushlist.push(b)
-                    AdjList[a]=pushlist
-                    count++;
-                }
-                else if((adjMatrix[a][adjMatrix.length-1]==0) && (count==0)){
-                    AdjList[a]=[]
-                }
-                else{
-                    AdjList=[[adjMatrix[0]]]
-                }
+    }
+    if(count>=array.length){
+        Edgesless=true
+    }
+    return Edgesless
+}
+
+function convertToAdjList(adjmatrix){
+    var adjList=[]
+    if(adjmatrix.length==1){
+        adjList=[[adjmatrix[0]]]
+    }
+    for(var x=0;x<adjmatrix.length;x++){
+        var pushlist=[]
+        for(y=0;y<adjmatrix[x].length;y++){
+            if(adjmatrix[x][y]==1){
+                pushlist.push(y)
+                adjList[x]=pushlist
+            }
+            else if(NoEdges(adjmatrix[x])==true){
+                adjList[x]=[]
             }
         }
-       return AdjList;
+
     }
+    return adjList
+}
