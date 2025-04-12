@@ -110,3 +110,10 @@ return AdjMatrix
 ```
 
 ## Run Time Analysis(Bonus)
+
+## Runtime Analysis(Bonus)
+Here my function contains 5-four loops. The first two for-loops iterate over the the Adjacency List's vertices and their assocated edges. This is done in order to create an Adjacency matrix of the same size filled with zeros so we can insert the edge realtionships later. This gives us $E\cdot V$
+
+The next three loops loop through the same Adjacecny list again but this time with an extra nested loop inside the inner loop, this time in the form of a function called PushAt2D. PushAt2D appends elements to a 2D array and has a time complexity of $|V+V|$, I get this from the fact that I used the built in slice function which at worst takes $O(n)$ and we do this twice unnested. Here because we are dealing with graphs and we would be appedning to the Adjacency matrix we have $O(|V|)$ for each operation. Also note that Im not using a loop explicitly but the slice operation loops over part of the list its looking at.
+
+Taking this all into consideration we have that the time complexity is $E\cdot V+(E\cdot V)(V+V)=EV+2EV^2=EV^2\implies \theta(|EV^2|)$
