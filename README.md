@@ -38,7 +38,7 @@ most important part. Add your answer to this markdown file.
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
 
-
+$$\textcolor{red}{\text{Implemenation for converting an Adjacecny List to an Adjacency Matrix}}$$
 ```Javascript
 function PushAt2D(array,IndexOuter,IndexInner){
         var returnarr=[...array[IndexOuter].slice(0,IndexInner),1,...array[IndexOuter].slice(IndexInner+1)]
