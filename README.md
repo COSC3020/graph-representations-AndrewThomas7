@@ -62,3 +62,5 @@ function convertToAdjMatrix(AdjList){
 return AdjMatrix
 }
 ```
+
+## Run Time Analysis(Bonus)
