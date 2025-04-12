@@ -37,3 +37,28 @@ most important part. Add your answer to this markdown file.
 
 Implement a function to convert an adjacency list to an adjacency matrix and
 analyze it as above.
+
+
+```Javascript
+function PushAt2D(array,IndexOuter,IndexInner){
+        var returnarr=[...array[IndexOuter].slice(0,IndexInner),1,...array[IndexOuter].slice(IndexInner+1)]
+        array=[...array.slice(0,IndexOuter),returnarr,...array.slice(IndexOuter+1)];
+    return array
+}
+function convertToAdjMatrix(AdjList){
+    var AdjMatrix=[];
+    for(x=0;x<AdjList.length;x++){
+        var PushListZero=[]
+        for(y=0;y<AdjList.length;y++){
+            PushListZero.push(0)
+            AdjMatrix[x]=PushListZero
+        }
+    }
+    for(j=0;j<AdjList.length;j++){
+        for(k=0;k<AdjList[j].length;k++){
+         AdjMatrix= PushAt2D(AdjMatrix,j,AdjList[j][k])
+    }
+}
+return AdjMatrix
+}
+```
