@@ -108,9 +108,6 @@ function convertToAdjMatrix(AdjList){
 return AdjMatrix
 }
 ```
-
-## Run Time Analysis(Bonus)
-
 ## Runtime Analysis(Bonus)
 Here my function contains 5-four loops. The first two for-loops iterate over the the Adjacency List's vertices and their assocated edges. This is done in order to create an Adjacency matrix of the same size filled with zeros so we can insert the edge realtionships later. This gives us $E\cdot V$
 
