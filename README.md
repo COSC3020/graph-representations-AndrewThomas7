@@ -18,9 +18,7 @@ Source #1-https://launchschool.com/books/advanced_dsa/read/representing_graphs_a
 
 Source #2-  Chat GPT Querey-"function convertToAdjList(adjMatrix) { var AdjList={}; if(adjMatrix.length<=1){ // AdjList[0]=[] return ; } for(var a=0; a<adjMatrix.length; a++){ var pushlist=[]; var count=0; for(var b=0; b<adjMatrix.length; b++){ // var Node= adjMatrix[a]; // var connections =[[a+1][b+1]] // Object.assign(adjMatrix,{Node,connections}) if(adjMatrix[a][b]==1){ pushlist.push(b+1) AdjList[a+1]=pushlist count++; } if(adjMatrix[a][adjMatrix.length-1]==0 && count==0){ AdjList[a+1]=[] } } } This is my code for converting adjacency matrices to lists, and I cant get it to work for an empty matrix, how can I fix this?" Don't give me code
 
-Source #3-https://github.com/COSC3020/graph-representations-DJReflexive/blob/main/code.js
-
-Source #4-https://www.prepbytes.com/blog/heap/heap-algorithm-for-generating-permutations/
+Source #3-https://github.com/COSC3020/graph-representations-DJReflexive/blob/main/code.js- I used this persons code to test against my output because I couldn't get the tests to pass. In retrospect some bug was occuring and all I had to do was paste my code in the code.js file again for the tests to pass. Very weird, but this helped me look at what the ouputs should be
 
 
 
