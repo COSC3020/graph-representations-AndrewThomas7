@@ -6,7 +6,6 @@ function; I've provided some basic testing code that uses
 [jsverify](https://jsverify.github.io/) in `code.test.js`. Now, the test code
 does contain the solution, so you can have a look at it if you get stuck, but
 try not to peek before attempting to solve it on your own.
-
 ## Sources
 
 “I certify that I have listed all sources used to complete this exercise, including the use
