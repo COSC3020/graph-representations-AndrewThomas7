@@ -19,14 +19,12 @@ function convertToAdjList(adjmatrix){
         adjList=[[adjmatrix[0]]]
     }
     for(var x=0;x<adjmatrix.length;x++){
-        var pushlist=[]
+        if(NoEdges(adjmatrix[x])==true){
+            adjList[x]=[]
+        }
         for(y=0;y<adjmatrix[x].length;y++){
             if(adjmatrix[x][y]==1){
-                pushlist.push(y)
-                adjList[x]=pushlist
-            }
-            else if(NoEdges(adjmatrix[x])==true){
-                adjList[x]=[]
+                adjList.push([y])
             }
         }
 
