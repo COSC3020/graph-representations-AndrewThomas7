@@ -1,16 +1,18 @@
-function NoEdges(array){
-    var Edgesless=false;
-    var count=0;
-    for(var j=0;j<array.length;j++){
-        if(array[j]==0){
+function NoEdges(array) {
+    var Edgesless = false;
+    var count = 0;
+    for (var j = 0; j < array.length; j++) {
+        if (array[j] == 0) {
             count++
         }
     }
-    if(count>=array.length){
-        Edgesless=true
+    if (count >= array.length) {
+        Edgesless = true
     }
     return Edgesless
 }
+
+
 function convertToAdjList2(adjmatrix) {
     var adjList = []
     if (array.length == 1) {
