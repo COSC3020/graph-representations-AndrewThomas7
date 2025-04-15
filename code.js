@@ -12,6 +12,7 @@ function NoEdges(array){
     }
     return Edgesless
 }
+
 function convertToAdjList(adjmatrix){
     var adjList=[]
     if(adjmatrix.length==1){
