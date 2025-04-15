@@ -1,4 +1,3 @@
-
 function NoEdges(array){
     var Edgesless=false;
     var count=0;
