@@ -13,10 +13,11 @@ function NoEdges(array) {
 }
 
 function convertToAdjList(adjmatrix) {
-    let adjList=[];
+    let adjList;
     if (adjmatrix.length == 1) {
         adjList = [[adjmatrix[0]]]
     }
+    adjList=[];
     for (var x = 0; x < adjmatrix.length; x++) {
         if (NoEdges(adjmatrix[x]) == true) {
             adjList[x] = []
